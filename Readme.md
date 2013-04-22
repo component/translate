@@ -1,7 +1,7 @@
 
 # translate
 
-  Hardware accelerated translations with fallback support
+  Hardware accelerated translations with fallback support.
 
 ## Installation
 
@@ -9,7 +9,7 @@
 
 ## API
 
-   
+### translate(el, x, y)
 
 ## License
 
