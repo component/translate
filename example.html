@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Translate</title>
+</head>
+<body>
+  <script src="build/build.js"></script>
+
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      background: #eee;
+      border-radius: 50%;
+    }
+  </style>
+
+  <div></div>
+
+  <script>
+    var translate = require('translate');
+    var el = document.querySelector('div');
+
+
+    onmousemove = function(e){
+      var x = e.offsetX;
+      var y = e.offsetY;
+      translate(el, x, y);
+    }
+  </script>
+</body>
+</html>
