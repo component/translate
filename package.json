@@ -1,0 +1,18 @@
+{
+  "name": "translate-component",
+  "description": "Hardware accelerated translations with fallback support",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/has-translate3d": "*",
+    "component/transform-property": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "component": {
+    "scripts": {
+      "translate/index.js": "index.js"
+    }
+  }
+}
