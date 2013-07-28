@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "component/has-translate3d": "*",
-    "component/transform-property": "*"
+    "has-translate3d": "*",
+    "transform-property": "*"
   },
   "development": {},
   "license": "MIT",
