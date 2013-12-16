@@ -5,6 +5,9 @@ build: components index.js
 components: component.json
 	@component install --dev
 
+test:
+	@component test browser
+
 clean:
 	rm -fr build components template.js
 

@@ -6,19 +6,26 @@
 var transform = require('transform-property');
 var has3d = require('has-translate3d');
 
+
+/**
+ * Regexp to check "End with %"
+ */
+
+var percentRegexp = /%$/;
+
+
 /**
  * Expose `translate`.
  */
 
 module.exports = translate;
 
-var percentEndPattern = /%$/;
 
 /**
  * Translate `el` by `(x, y)`.
  *
  * @param {Element} el
- * @param {Number|String} x Pixel value in number of percent value
+ * @param {Number|String} x
  * @param {Number|String} y 
  * @api public
  */
@@ -26,8 +33,8 @@ var percentEndPattern = /%$/;
 
 function translate(el, x, y){
   
-  if (!percentEndPattern.test(x)) x += 'px';
-  if (!percentEndPattern.test(y)) y += 'px';
+  if (!percentRegexp.test(x)) x += 'px';
+  if (!percentRegexp.test(y)) y += 'px';
 
   if (transform) {
     if (has3d) {
@@ -36,7 +43,7 @@ function translate(el, x, y){
       el.style[transform] = 'translate(' + x + ',' + y + ')';
     }
   } else {
-    el.style.left = x + 'px';
-    el.style.top = y + 'px';
+    el.style.left = x;
+    el.style.top = y;
   }
 };
