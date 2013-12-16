@@ -36,7 +36,7 @@ function translate(el, x, y){
       el.style[transform] = 'translate(' + x + ',' + y + ')';
     }
   } else {
-    el.style.left = x;
-    el.style.top = y;
+    el.style.left = x + 'px';
+    el.style.top = y + 'px';
   }
 };
