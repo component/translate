@@ -8,7 +8,9 @@
     "component/has-translate3d": "*",
     "component/transform-property": "*"
   },
-  "development": {},
+  "development": {
+    "component/assert": "*"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": [
